@@ -1,11 +1,15 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+
 #site{
     display: grid;
     grid-template-columns: repeat(3, minmax(100px, 1fr));
-    grid-template-rows: 50px minmax(100px, 1fr) minmax(100px, 1fr);
+    grid-template-rows: 50px 1fr 1fr 1fr minmax(100px, 1fr) minmax(100px, 1fr) 50px;
     min-height:100vh;
 
     margin: 0px;
-    border: solid;
 }
 
 #page{
@@ -13,33 +17,68 @@
     padding: 0px;
     
 }
+#projects{
+    grid-area: span 1 / span 3;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+
+    border: solid;
+}
+
 .element{
 
     grid-area: span 1 / span 1;
     min-height: auto;
     max-width:100%;
+    max-height: 100%;
 
     display:flex;
     flex-direction: column;
     align-items: center;
 
 }
-.elementanimate{
 
-    grid-area: span 1 / span 1;
-    min-height: auto;
-    max-width:100%;
-
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-
-
-}
 #header{
     background-color: aqua  ;
     grid-area: span 1 / span 3;
- 
+    min-height: 10vh;
+
+    position: sticky;
+    top: 0;
 
 }
+
+#intro{
+    background-color: blue  ;
+    grid-area: span 1 / span 3;
+    min-height: 90vh;
+
+}
+
+#description{
+    background-color: red;
+    grid-area: span 1 / span 3;
+    min-height: 30vh;
+}
+
+#skills{
+    background-color: orange;
+
+    grid-area: span 1 / span 3;
+    min-height: 20vh;
+}
+
+#contactme{
+    background-color: blueviolet;
+    grid-area: span 1 / span 3;
+    min-height: 20vh;
+}
+
+#footer{
+    background-color: aquamarine;
+    grid-area: span 1 / span 3;
+    min-height: 5vh;
+}
+
 

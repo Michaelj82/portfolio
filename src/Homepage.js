@@ -10,30 +10,55 @@ export default function Homepage (){
         <div id={'site'}>
             <header id={'header'}>bruh bruh bruh 
                 bruh bruh bruh</header>
-            <div className={'elementanimate'}>
-                asdf
-            </div>
-            
-            <div className={'element'}>
-                asdf
+            <div id='intro'>
+            yo
+
 
             </div>
-            <div className={'elementanimate'}>
-                asdf
+
+            <div id='description'>
+
+            </div>
+
+            <div id='skills'>
+
+            </div>
+
+
+            <div id='projects'>
+
+                <div className={'element'}>
+                    asdf
                 </div>
-            <div className={'elementanimate'}>
-                adf
-            </div>
-            
-            <div className={'element'}>
-                asdf
+                
+                <div className={'element'}>
+                    asdf
 
-            </div>
-            <div className={'elementanimate'}>
-                asdf
                 </div>
+                <div className={'element'}>
+                    asdf
+                    </div>
+                <div className={'element'}>
+                    adf
+                </div>
+                
+                <div className={'element'}>
+                    asdf
 
+                </div>
+                <div className={'element'}>
+                    asdf
+                    </div>
+            </div>
 
+        <div id='contactme'>
+
+        </div>
+
+        <footer id='footer'>
+            
+        </footer>
+        
         </div>
     )
 
