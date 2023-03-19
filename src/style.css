@@ -1,12 +1,14 @@
 html, body{
     margin: 0px;
     padding: 0px;
+
+    scroll-behavior: smooth;
 }
 
 #site{
     display: grid;
     grid-template-columns: repeat(3, minmax(100px, 1fr));
-    grid-template-rows: 50px 1fr 1fr 1fr minmax(100px, 1fr) minmax(100px, 1fr) 50px;
+    grid-template-rows: 30px repeat(5, minmax(100px, 1fr)) 50px;
     min-height:100vh;
 
     margin: 0px;
@@ -42,11 +44,19 @@ html, body{
 #header{
     background-color: aqua  ;
     grid-area: span 1 / span 3;
-    min-height: 10vh;
 
     position: sticky;
     top: 0;
 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+#header > .link{
+    margin: 1%;
 }
 
 #intro{
