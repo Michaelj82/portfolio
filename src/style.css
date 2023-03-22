@@ -8,7 +8,7 @@ html, body{
 #site{
     display: grid;
     grid-template-columns: repeat(3, minmax(100px, 1fr));
-    grid-template-rows: 30px repeat(5, minmax(100px, 1fr)) 50px;
+    grid-template-rows: 30px minmax(100px, 1fr) minmax(100px, 0.65fr) minmax(100px, 0.8fr) minmax(100px, 0.8fr) minmax(100px, 0.8fr) 50px;
     min-height:100vh;
 
     margin: 0px;
@@ -42,7 +42,7 @@ html, body{
 }
 
 #header{
-    background-color: aqua  ;
+    background-color: black  ;
     grid-area: span 1 / span 3;
 
     position: sticky;
@@ -57,6 +57,8 @@ html, body{
 
 #header > .link{
     margin: 1%;
+    color: white;
+
 }
 
 #intro{
@@ -69,26 +71,22 @@ html, body{
 #description{
     background-color: red;
     grid-area: span 1 / span 3;
-    min-height: 30vh;
 }
 
 #skills{
     background-color: orange;
 
     grid-area: span 1 / span 3;
-    min-height: 20vh;
 }
 
 #contactme{
     background-color: blueviolet;
     grid-area: span 1 / span 3;
-    min-height: 20vh;
 }
 
 #footer{
     background-color: aquamarine;
     grid-area: span 1 / span 3;
-    min-height: 5vh;
 }
 
 
