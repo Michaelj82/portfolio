@@ -1,5 +1,7 @@
 import React from 'react'
-import { Link } from 'react-scroll'
+import { Link, animateScroll as scroll } from 'react-scroll'
+import './style.css'
+
 export default function Navbar(){
 
     return(
@@ -13,7 +15,7 @@ export default function Navbar(){
                     offset={-30}
                     duration={200}
 
-                    >Home</Link>
+                    > Home</Link>
                 </div>
                 <div className='link'>
                 <Link
