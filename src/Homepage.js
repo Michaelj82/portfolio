@@ -1,17 +1,28 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import Navbar from './Navbar';
-import {useState, useEffect} from 'react'
+import {useState, useEffect, useRef, createRef} from 'react'
 import {Link, animateScroll as scroll} from 'react-scroll'
 import './style.css'
+import Star from './Star'
 
-export default function Homepage (){
-    
+
+function Homepage (){
+    const introRef = useRef(null)
+    const [introWidth, setIntroWidth] = useState(0)
+    const [introHeight, setIntroHeight] = useState(0)
+
+    useEffect(()=>{
+        setIntroWidth(introRef.current.offsetWidth)
+        setIntroHeight(introRef.current.offsetHeight)
+    }, [])
 
     return(
         <div id={'site'}>
             <Navbar></Navbar>
-            <div id='intro'>
-            intro
+            <div id='intro' ref={introRef}>
+                width:{introWidth}
+                height:{introHeight}
+            {/* <Star width={introWidth} height={introHeight}></Star> */}
 
 
             </div>
@@ -63,3 +74,5 @@ export default function Homepage (){
     )
 
 }
+
+export default Homepage

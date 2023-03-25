@@ -16,6 +16,9 @@ html, body{
     min-height:100vh;
 
     margin: 0px;
+
+    background-image: linear-gradient(black, #1d254a);
+    color: white;
 }
 
 #page{
@@ -46,7 +49,7 @@ html, body{
 }
 
 #header{
-    background-color: black  ;
+    /* background-color: black  ; */
     grid-area: span 1 / span 3;
 
     position: sticky;
@@ -61,7 +64,7 @@ html, body{
 
 .link{
     margin: 1%;
-    color: white;
+    /* color: white; */
     position: relative;
     display: inline-block;
 
@@ -132,30 +135,30 @@ html, body{
 
 
 #intro{
-    background-color: #19A7CE  ;
+    /* background-color: #19A7CE  ; */
     grid-area: span 1 / span 3;
     min-height: 90vh;
 
 }
 
 #description{
-    background-color: #146C94;
+    /* background-color: #146C94; */
     grid-area: span 1 / span 3;
 }
 
 #skills{
-    background-color: #F6F1f1;
+    /* background-color: #F6F1f1; */
 
     grid-area: span 1 / span 3;
 }
 
 #contactme{
-    background-color: #19A7CE;
+    /* background-color: #19A7CE; */
     grid-area: span 1 / span 3;
 }
 
 #footer{
-    background-color: black;
+    /* background-color: black; */
     grid-area: span 1 / span 3;
 }
 
