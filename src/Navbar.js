@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, animateScroll as scroll } from 'react-scroll'
 import './style.css'
-
+import Star from './Star'
 export default function Navbar(){
 
     return(
