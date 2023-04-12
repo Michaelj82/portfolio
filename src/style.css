@@ -19,6 +19,7 @@ html, body{
 
     background-image: linear-gradient(black, #1d254a);
     color: white;
+    
 }
 
 #page{
@@ -61,6 +62,8 @@ html, body{
     align-items: center;
 
 }
+
+
 
 .link{
     margin: 1%;
@@ -140,6 +143,37 @@ html, body{
     min-height: 90vh;
 
 }
+.nameHeader{
+  text-align: center;
+}
+
+svg{
+  animation: moveUpDown 1s ease-in-out infinite alternate;
+  height: 50%;
+  width: 50%;
+}
+
+@keyframes moveUpDown {
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-6px);
+  }
+  
+}
+
+path{
+  fill:white;
+  stroke:black;
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+.cloudText{
+  font-size: 0.25rem;
+}
+
+
 
 #description{
     /* background-color: #146C94; */

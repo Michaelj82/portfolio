@@ -20,9 +20,43 @@ function Homepage (){
         <div id={'site'}>
             <Navbar></Navbar>
             <div id='intro' ref={introRef}>
-                width:{introWidth}
-                height:{introHeight}
-            {/* <Star width={introWidth} height={introHeight}></Star> */}
+                <h2 className='nameHeader'>Michael Johnson</h2>
+                <svg viewBox='0 0 105 105'>
+                    
+                    <path d='M 25, 60
+                            a 20, 20 1 0, 0 0, 40
+                            h 50
+                            a 20, 20 1 0, 0 0, -40
+                            a 10, 10 1 0, 0 -15, -10
+                            a 15, 15,1 0,0 -35,10
+                            z'/>
+
+                    
+                    <text x = "50%" y="60%" textAnchor='middle' dominantBaseline={'middle'} className={'cloudText'}>
+                        <tspan x="40%" dy ="10%"className='cloudText'>Self-taught programmer with</tspan>
+                        <tspan x="45%" dy ="11%"className='cloudText'>aspirations in Data and Web Development</tspan>
+
+                    </text>
+                </svg>
+
+
+
+
+                {/* <div className='cloud'>Self-Taught Programmer with aspirations in Data and Web Development</div> */}
+                <Star width={introWidth} height={introHeight}></Star>
+                <Star width={introWidth} height={introHeight}></Star>
+                <Star width={introWidth} height={introHeight}></Star>
+                <Star width={introWidth} height={introHeight}></Star>
+                <Star width={introWidth} height={introHeight}></Star>
+                <Star width={introWidth} height={introHeight}></Star>
+                <Star width={introWidth} height={introHeight}></Star>
+                <Star width={introWidth} height={introHeight}></Star>
+                <Star width={introWidth} height={introHeight}></Star>
+                <Star width={introWidth} height={introHeight}></Star>
+                <Star width={introWidth} height={introHeight}></Star>
+                <Star width={introWidth} height={introHeight}></Star>
+                <Star width={introWidth} height={introHeight}></Star>
+
 
 
             </div>
