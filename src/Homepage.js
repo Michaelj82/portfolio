@@ -22,7 +22,20 @@ function Homepage (){
             <div id='intro' ref={introRef}>
                 width:{introWidth}
                 height:{introHeight}
-            {/* <Star width={introWidth} height={introHeight}></Star> */}
+            <Star width={introWidth} height={introHeight}></Star>
+            <Star width={introWidth} height={introHeight}></Star>
+            <Star width={introWidth} height={introHeight}></Star>
+            <Star width={introWidth} height={introHeight}></Star>
+            <Star width={introWidth} height={introHeight}></Star>
+            <Star width={introWidth} height={introHeight}></Star>
+            <Star width={introWidth} height={introHeight}></Star>
+            <Star width={introWidth} height={introHeight}></Star>
+            <Star width={introWidth} height={introHeight}></Star>
+            <Star width={introWidth} height={introHeight}></Star>
+            <Star width={introWidth} height={introHeight}></Star>
+            <Star width={introWidth} height={introHeight}></Star>
+            <Star width={introWidth} height={introHeight}></Star>
+
 
 
             </div>
