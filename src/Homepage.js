@@ -4,7 +4,7 @@ import {useState, useEffect, useRef, createRef} from 'react'
 import {Link, animateScroll as scroll} from 'react-scroll'
 import './style.css'
 import Star from './Star'
-
+import me from './images/me.jpg'
 
 function Homepage (){
     const introRef = useRef(null)
@@ -42,7 +42,6 @@ function Homepage (){
 
 
 
-                {/* <div className='cloud'>Self-Taught Programmer with aspirations in Data and Web Development</div> */}
                 <Star width={introWidth} height={introHeight}></Star>
                 <Star width={introWidth} height={introHeight}></Star>
                 <Star width={introWidth} height={introHeight}></Star>
@@ -62,7 +61,17 @@ function Homepage (){
             </div>
 
             <div id='description'>
-            about me
+                <div><h4>About Me</h4></div>
+                <div id='descriptionInfo'>{"\n"}
+
+                    <div className='descriptionText'>Graduating in 2023 with a Bachelors in Economics and Minors in Spanish and Anthropology. {"\n"}
+                    During my college career I was very studious and ensured academic success. However, outside of that, I discovered a new passion: coding. Throughout my time in school I have taught myself Python (with an emphasis on Data-driven modules) and JavaScript/ReactJS. I am proud of how far I have come and wish to pursue an opportunity which lets me take advantage of my skills and learn more in this field.
+                    </div>
+                    <div className='profilePic'>
+                        <img src={me}></img>
+
+                    </div>
+                </div>
             </div>
 
             <div id='skills'>
