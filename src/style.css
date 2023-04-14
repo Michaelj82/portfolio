@@ -4,6 +4,8 @@
 }
 
 html, body{
+
+  /* overflow-x: hidden; */
     margin: 0px;
     padding: 0px;
     font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif;
@@ -52,7 +54,7 @@ html, body{
 #header{
     /* background-color: black  ; */
     grid-area: span 1 / span 3;
-
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
 
@@ -60,6 +62,8 @@ html, body{
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+
+    z-index: 10000;
 
 }
 
@@ -199,6 +203,7 @@ path{
 
   font-size: 3vh;
 
+
 }
 
 #descriptionInfo > .descriptionText{
@@ -207,7 +212,8 @@ path{
 }
 
 #descriptionInfo > .profilePic{
-  width: 100%;
+  position: relative;
+  width: auto;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -215,6 +221,12 @@ path{
   grid-area: span 1 / span 1;
 
 
+}
+
+#descriptionInfo > .profilePic > img{
+  position: absolute;
+  height: 100%;
+  width: auto;
 }
 
 #descriptionInfo > .profilePic > img{
@@ -226,7 +238,27 @@ path{
 #skills{
     /* background-color: #F6F1f1; */
 
+    font-size: 3vh;
+
     grid-area: span 1 / span 3;
+}
+
+#skillDiv{
+  display: flex;
+  justify-content: center;
+  
+}
+
+#twoColumnsSkills{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+#threeColumnsSkills > li{
+  margin: 0;
 }
 
 #contactme{

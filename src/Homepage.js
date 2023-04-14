@@ -75,7 +75,37 @@ function Homepage (){
             </div>
 
             <div id='skills'>
-            skills
+                <div> <h4>Skills</h4></div>
+                <div>
+                    <p>Throughout my coding journey, I have had the opportunity to delve into many different technologies. Right now, I have experience in: {'\n'}</p>
+
+                    <div id='skillDiv'>
+                        <ul id='twoColumnsSkills'>
+                            <li>
+                                Data Science/Data Analysis
+                                <ul>
+                                    <li>Pandas</li>
+                                    <li>NumPy</li>
+                                    <li>Sci-kitlearn</li>
+                                    <li>PyTorch</li>
+                                    <li>Natural Language Processing</li>
+                                    <li>Plus a lot more Python modules!</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Web-Development
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>ReactJS</li>
+                                    <li>Firebase</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
 
 
