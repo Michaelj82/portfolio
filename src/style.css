@@ -63,7 +63,7 @@ html, body{
     justify-content: flex-end;
     align-items: center;
 
-    z-index: 10000;
+    z-index: 1000;
 
 }
 
