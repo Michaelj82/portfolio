@@ -4,6 +4,8 @@
 }
 
 html, body{
+
+  /* overflow-x: hidden; */
     margin: 0px;
     padding: 0px;
     font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif;
@@ -52,7 +54,7 @@ html, body{
 #header{
     /* background-color: black  ; */
     grid-area: span 1 / span 3;
-
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
 
@@ -60,6 +62,8 @@ html, body{
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+
+    z-index: 1000;
 
 }
 
@@ -151,6 +155,7 @@ svg{
   animation: moveUpDown 1s ease-in-out infinite alternate;
   height: 50%;
   width: 50%;
+
 }
 
 @keyframes moveUpDown {
@@ -171,19 +176,89 @@ path{
 }
 .cloudText{
   font-size: 0.25rem;
+  z-index: 101;
+
 }
 
+#description, #skills, #contactme{
+  margin: 1%;
 
+  min-height: 100px;
+
+  max-width: 100%;
+  max-height: 100%;
+  padding: 1%;
+}
 
 #description{
-    /* background-color: #146C94; */
-    grid-area: span 1 / span 3;
+
+
+  grid-area: span 1 / span 3;
+
+ 
 }
+#descriptionInfo{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+
+  font-size: 3vh;
+
+
+}
+
+#descriptionInfo > .descriptionText{
+  grid-area: span 1 / span 1;
+
+}
+
+#descriptionInfo > .profilePic{
+  position: relative;
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: span 1 / span 1;
+
+
+}
+
+#descriptionInfo > .profilePic > img{
+  position: absolute;
+  height: 100%;
+  width: auto;
+}
+
+#descriptionInfo > .profilePic > img{
+  max-height: 100%;
+  max-width: 100%;
+}
+
 
 #skills{
     /* background-color: #F6F1f1; */
 
+    font-size: 3vh;
+
     grid-area: span 1 / span 3;
+}
+
+#skillDiv{
+  display: flex;
+  justify-content: center;
+  
+}
+
+#twoColumnsSkills{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+#threeColumnsSkills > li{
+  margin: 0;
 }
 
 #contactme{
